@@ -69,6 +69,7 @@ KeyBeat uses `uiohook-napi` to listen for global keystrokes. On macOS, this requ
 | **Backspace** | Hi-Hat | - |
 | **A-Z/0-9** | Felt Piano | C Minor Pentatonic (Rotational) |
 
+
 ## 📄 License
 
 ISC
