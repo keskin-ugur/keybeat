@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>KeyBeat</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #1e1e1e;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #key-display {
+            font-size: 6rem;
+            font-weight: bold;
+            color: #4CAF50;
+            text-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+            min-height: 1.5em;
+        }
+
+        .status {
+            margin-top: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>KeyBeat</h1>
+    <div id="key-display">Ready</div>
+    <div class="status">Listening for global keypresses...</div>
+
+    <div class="controls">
+        <button id="mute-btn">Mute</button>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <style>
+        .controls {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        #mute-btn {
+            background: transparent;
+            border: 1px solid #4CAF50;
+            color: #4CAF50;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        #mute-btn:hover {
+            background: #4CAF50;
+            color: white;
+        }
+
+        #mute-btn.muted {
+            border-color: #ff4444;
+            color: #ff4444;
+        }
+
+        #mute-btn.muted:hover {
+            background: #ff4444;
+            color: white;
+        }
+
+        #volume-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 150px;
+            height: 5px;
+            background: #555;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: #4CAF50;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    </style>
+    <script src="./node_modules/howler/dist/howler.min.js"></script>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
