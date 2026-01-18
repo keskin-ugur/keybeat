@@ -2,7 +2,7 @@
 
 **KeyBeat** is a background Lo-Fi sampler application for macOS. It turns your keyboard into a musical instrument, playing soothing lo-fi piano notes and rhythmic drum sounds as you type, no matter which application is in focus.
 
-![KeyBeat App](https://via.placeholder.com/600x400?text=KeyBeat+App+Screenshot)
+![KeyBeat App](screenshot.png)
 
 ## ✨ Features
 
