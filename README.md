@@ -69,16 +69,6 @@ KeyBeat uses `uiohook-napi` to listen for global keystrokes. On macOS, this requ
 | **Backspace** | Hi-Hat | - |
 | **A-Z/0-9** | Felt Piano | C Minor Pentatonic (Rotational) |
 
-## 📦 Building
-
-To create a distributable `.dmg` for macOS:
-
-```bash
-npm run build
-```
-
-This will run `electron-builder` and output the installer in the `dist/` directory.
-
 ## 📄 License
 
 ISC
